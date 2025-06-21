@@ -8,11 +8,22 @@ analise-estoque-powerbi
   <img src="https://img.shields.io/badge/ETL-Power%20Query-01B8AA?style=for-the-badge" alt="ETL: Power Query"/>
 </p>
 
-![Capa do Dashboard](URL_DA_SUA_MELHOR_IMAGEM_DA_PÁGINA_1)
+![Capa do Dashboard](assets/capa.png)
 
-## 🎯 Descrição do Projeto
+## 🎯 Resumo do Projeto
 
 Este projeto foi desenvolvido para analisar o problema de estoque sem giro em uma empresa de distribuição. O objetivo é transformar dados brutos de inventário em um dashboard interativo que permita à gestão identificar rapidamente os principais focos de capital empatado, analisar as causas raiz por categoria e marca, e tomar decisões estratégicas para otimizar o inventário.
+
+**[🔗 Clique aqui para acessar o Dashboard Interativo](https://app.powerbi.com/view?r=eyJrIjoiZDNkMGEyYTctNjE2YS00ZTg4LTk2NWUtYTFjYmE5NDA4NWM3IiwidCI6IjMyNDFkMzllLTdiZDEtNDQ2My05ZGFmLWU2M2M2MWZjOWRkYyJ9)**
+
+---
+
+## 🛠️ Ferramentas e Tecnologias
+
+* **Power BI Desktop:** Ferramenta principal para desenvolvimento, modelagem e criação dos visuais.
+* **DAX (Data Analysis Expressions):** Utilizado para criar todas as métricas, classificações (Curva ABC) e as lógicas de interatividade avançada.
+* **Power Query:** Utilizado para a conexão, limpeza e tratamento inicial dos dados a partir dos arquivos CSV.
+* **Design de UI/UX:** Aplicação de conceitos de hierarquia visual, paleta de cores consistente e formatação condicional para criar uma experiência de usuário intuitiva.
 
 ---
 
@@ -23,15 +34,6 @@ Este projeto foi desenvolvido para analisar o problema de estoque sem giro em um
 * **Navegação por Drill-through:** Funcionalidade que permite uma jornada de análise do resumo geral (por categoria) para uma visão detalhada (por produto) com um simples clique.
 * **Tooltips Interativos:** Dicas de ferramenta personalizadas que mostram a lista de SKUs específicos de uma marca ao passar o mouse, aprofundando a análise sem poluir a tela.
 * **"Tabela Inteligente" com Formatação Condicional:** Uma tabela de dados que usa cores, ícones e barras para sinalizar visualmente a prioridade, o risco de volume e a rentabilidade de cada item.
-
----
-
-## 🛠️ Ferramentas e Conceitos Utilizados
-
-* **Power BI Desktop:** Ferramenta principal para desenvolvimento, modelagem e criação dos visuais.
-* **DAX (Data Analysis Expressions):** Utilizado para criar todas as métricas, classificações (Curva ABC) e as lógicas de interatividade avançada.
-* **Power Query:** Utilizado para a conexão, limpeza e tratamento inicial dos dados a partir dos arquivos CSV.
-* **Design de UI/UX:** Aplicação de conceitos de hierarquia visual, paleta de cores consistente e formatação condicional para criar uma experiência de usuário intuitiva.
 
 ---
 
@@ -49,12 +51,6 @@ Visão macro do problema, ideal para a diretoria. Responde "Qual o tamanho do pr
 Página de ação para gestores. Acessada via drill-through, permite a investigação em nível de produto e categoria. Responde "Quais são os itens e marcas exatos que precisam de atenção?".
 
 ![Análise Detalhada](assets/dashboard_analise_detalhada.png)
-
----
-
-## 💡 Medida DAX de Destaque
-
-Uma das medidas mais interessantes do projeto é a que calcula o Ticket Médio para uma curva específica, como a Curva A.
 
 ---
 
@@ -90,6 +86,7 @@ RETURN
         PctAcumulado <= 0.95, "B", -- Os próximos 15% do valor
         "C"                       -- Os últimos 5%
     )
+```
 
 ## Autor
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Carlos%20Vinícius-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/carlos-vinicius-nascimento-de-jesus/)
