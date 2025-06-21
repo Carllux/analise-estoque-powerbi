@@ -56,13 +56,40 @@ Página de ação para gestores. Acessada via drill-through, permite a investiga
 
 Uma das medidas mais interessantes do projeto é a que calcula o Ticket Médio para uma curva específica, como a Curva A.
 
+---
+
+## 💡 Lógica DAX de Destaque
+
+A lógica central do projeto reside na coluna calculada `CURVA ABC`, que segmenta dinamicamente todos os produtos com base no Princípio de Pareto. A fórmula utiliza variáveis para ranquear, acumular e calcular a participação de cada produto no valor total.
+
 ```dax
-Ticket Médio Curva A =
-CALCULATE (
-    [Ticket Médio Parado],
-    'Dim_produto'[Classificação ABC] = "A"
-)
-```
+CURVA ABC = 
+-- Ranqueia os produtos usando a coluna de valor que está na própria tabela.
+VAR RankingValor = RANKX(ALL('Dim_Produto'), 'Dim_Produto'[VALOREST], , DESC)
+
+-- Calcula o valor total de todos os produtos na tabela Dim_Produto.
+VAR ValorTotal = SUM('Dim_Produto'[VALOREST])
+
+-- Calcula o valor acumulado.
+VAR ValorAcumulado =
+    CALCULATE(
+        SUM('Dim_Produto'[VALOREST]),
+        FILTER(
+            ALL('Dim_Produto'),
+            RANKX(ALL('Dim_Produto'), 'Dim_Produto'[VALOREST], , DESC) <= RankingValor
+        )
+    )
+
+-- Calcula a porcentagem acumulada.
+VAR PctAcumulado = DIVIDE(ValorAcumulado, ValorTotal)
+
+RETURN
+    SWITCH(
+        TRUE(),
+        PctAcumulado <= 0.8, "A",  -- Os primeiros 80% do valor
+        PctAcumulado <= 0.95, "B", -- Os próximos 15% do valor
+        "C"                       -- Os últimos 5%
+    )
 
 ## Autor
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Carlos%20Vinícius-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/carlos-vinicius-nascimento-de-jesus/)
