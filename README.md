@@ -45,12 +45,12 @@ O relatório é composto por duas páginas principais e páginas de suporte para
 Visão macro do problema, ideal para a diretoria. Responde "Qual o tamanho do problema e onde ele está concentrado?".
 #### Página 1: Visão Geral
 
-![Visão Geral](assets/dashboard_resumo_executivo.png)
+![Visão Geral](análise-estoque-powerbi/assets/dashboard_resumo_executivo.png)
 
 ### Página 2: Análise Detalhada
 Página de ação para gestores. Acessada via drill-through, permite a investigação em nível de produto e categoria. Responde "Quais são os itens e marcas exatos que precisam de atenção?".
 
-![Análise Detalhada](assets/dashboard_analise_detalhada.png)
+![Análise Detalhada](análise-estoque-powerbi/assets/dashboard_analise_detalhada.png)
 
 ---
 
