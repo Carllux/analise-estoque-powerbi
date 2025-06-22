@@ -8,7 +8,7 @@ analise-estoque-powerbi
   <img src="https://img.shields.io/badge/ETL-Power%20Query-01B8AA?style=for-the-badge" alt="ETL: Power Query"/>
 </p>
 
-![Capa do Dashboard](assets/capa.png)
+![Capa do Dashboard](análise-estoque-powerbi/assets/capa.png)
 
 ## 🎯 Resumo do Projeto
 
