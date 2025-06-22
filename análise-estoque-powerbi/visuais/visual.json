@@ -1,0 +1,51 @@
+{
+  "name": "YF Style - Free/Pro",
+  "dataColors": ["#1399FC", "#26A616", "#4FC739", "#09F", "#feab3d", "#F0310C"],
+  "background": "#FFFFFF",
+  "foreground": "#111111",
+  "tableAccent": "#1399FC",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "fontFamily": "Lato, sans-serif",
+        "color": {"solid": {"color": "#111111"}},
+        "background": {"solid": {"color": "#FFFFFF"}}
+      }
+    },
+    "titleText": {
+      "*": {
+        "color": {"solid": {"color": "#000000"}},
+        "fontSize": 22,
+        "fontWeight": "bold"
+      }
+    },
+    "header": {
+      "*": {
+        "color": {"solid": {"color": "#333333"}},
+        "fontSize": 14,
+        "fontWeight": "normal"
+      }
+    },
+    "labels": {
+      "*": {
+        "color": {"solid": {"color": "#666666"}},
+        "fontSize": 12
+      }
+    },
+    "button": {
+      "*": {
+        "fontSize": 13,
+        "fontWeight": "bold",
+        "color": {"solid": {"color": "#FFFFFF"}},
+        "background": {"solid": {"color": "#1399FC"}}
+      }
+    },
+    "slicer": {
+      "*": {
+        "background": {"solid": {"color": "#F7F7F7"}},
+        "outlineColor": "#DEDEDE",
+        "foreground": {"solid": {"color": "#111111"}}
+      }
+    }
+  }
+}
