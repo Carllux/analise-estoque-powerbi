@@ -1,5 +1,3 @@
-# analise-estoque-powerbi
-analise-estoque-powerbi
 # Dashboard de Análise de Estoque Parado
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Concluído-brightgreen?style=for-the-badge" alt="Status do Projeto: Concluído"/>
