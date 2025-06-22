@@ -14,7 +14,7 @@ analise-estoque-powerbi
 
 Este projeto foi desenvolvido para analisar o problema de estoque sem giro em uma empresa de distribuição. O objetivo é transformar dados brutos de inventário em um dashboard interativo que permita à gestão identificar rapidamente os principais focos de capital empatado, analisar as causas raiz por categoria e marca, e tomar decisões estratégicas para otimizar o inventário.
 
-**[🔗 Clique aqui para acessar o Dashboard Interativo](https://app.powerbi.com/view?r=eyJrIjoiZDNkMGEyYTctNjE2YS00ZTg4LTk2NWUtYTFjYmE5NDA4NWM3IiwidCI6IjMyNDFkMzllLTdiZDEtNDQ2My05ZGFmLWU2M2M2MWZjOWRkYyJ9)**
+**[🔗 Clique aqui para acessar o Dashboard Interativo](https://app.powerbi.com/view?r=eyJrIjoiY2U4OGRmYTctNDE1Yy00ZDVjLWIyZTYtODAwODZiZTkxNWMyIiwidCI6IjMyNDFkMzllLTdiZDEtNDQ2My05ZGFmLWU2M2M2MWZjOWRkYyJ9)**
 
 ---
 
